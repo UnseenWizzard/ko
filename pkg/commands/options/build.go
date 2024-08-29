@@ -59,6 +59,10 @@ type BuildOptions struct {
 	// Empty string means the current working directory.
 	WorkingDirectory string
 
+	// AppDirectory allows for setting where the Go application binaries will be placed in the resulting container.
+	// Empty string means the default directly /ko-app.
+	AppDirectory string
+
 	ConcurrentBuilds     int
 	DisableOptimizations bool
 	SBOM                 string
@@ -97,11 +101,14 @@ func AddBuildOptions(cmd *cobra.Command, bo *BuildOptions) {
 		"Which labels (key=value) to add to the image.")
 	cmd.Flags().BoolVar(&bo.Debug, "debug", bo.Debug,
 		"Include Delve debugger into image and wrap around ko-app. This debugger will listen to port 40000.")
+	cmd.Flags().StringVar(&bo.AppDirectory, "app-dir", "",
+		"Directory the application binaries should be placed inside the container instead of default /ko-app.")
 	bo.Trimpath = true
 }
 
 // LoadConfig reads build configuration from defaults, environment variables, and the `.ko.yaml` config file.
 func (bo *BuildOptions) LoadConfig() error {
+	// TODO allow defining this path in the config file
 	v := viper.New()
 	if bo.WorkingDirectory == "" {
 		bo.WorkingDirectory = "."
@@ -166,6 +173,12 @@ func (bo *BuildOptions) LoadConfig() error {
 			return fmt.Errorf("'defaultBaseImage': error parsing %q as image reference: %w", ref, err)
 		}
 		bo.BaseImage = ref
+	}
+
+	if bo.AppDirectory == "" {
+		if appDir := v.GetString("defaultAppDirectory"); appDir != "" {
+			bo.AppDirectory = appDir
+		}
 	}
 
 	if len(bo.BaseImageOverrides) == 0 {
