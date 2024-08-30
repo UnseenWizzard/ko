@@ -21,8 +21,8 @@ import (
 	"path"
 
 	"github.com/google/go-containerregistry/pkg/v1/daemon"
-	"github.com/google/ko/pkg/publish"
 	"github.com/spf13/cobra"
+	"github.com/unseenwizzard/ko/pkg/publish"
 )
 
 // PublishOptions encapsulates options when publishing.

@@ -20,9 +20,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/ko/pkg/build"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
+	"github.com/unseenwizzard/ko/pkg/build"
 )
 
 func TestDefaultBaseImage(t *testing.T) {

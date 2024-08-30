@@ -42,9 +42,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/google/ko/pkg/internal/git"
-	"github.com/google/ko/pkg/internal/gittesting"
 	"github.com/stretchr/testify/require"
+	"github.com/unseenwizzard/ko/pkg/internal/git"
+	"github.com/unseenwizzard/ko/pkg/internal/gittesting"
 )
 
 const fakeGitURL = "git@github.com:foo/bar.git"

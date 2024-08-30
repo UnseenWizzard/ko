@@ -20,8 +20,8 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/google/ko/pkg/commands/options"
 	"github.com/spf13/cobra"
+	"github.com/unseenwizzard/ko/pkg/commands/options"
 	"golang.org/x/sync/errgroup"
 )
 

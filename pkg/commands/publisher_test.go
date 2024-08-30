@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/ko/pkg/build"
-	"github.com/google/ko/pkg/commands/options"
+	"github.com/unseenwizzard/ko/pkg/build"
+	"github.com/unseenwizzard/ko/pkg/commands/options"
 )
 
 func TestPublishImages(t *testing.T) {

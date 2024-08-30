@@ -21,8 +21,8 @@ import (
 	"testing"
 
 	"github.com/google/go-containerregistry/pkg/v1/random"
-	kotesting "github.com/google/ko/pkg/internal/testing"
-	"github.com/google/ko/pkg/publish"
+	kotesting "github.com/unseenwizzard/ko/pkg/internal/testing"
+	"github.com/unseenwizzard/ko/pkg/publish"
 )
 
 func TestDaemon(t *testing.T) {

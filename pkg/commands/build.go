@@ -17,8 +17,8 @@ package commands
 import (
 	"fmt"
 
-	"github.com/google/ko/pkg/commands/options"
 	"github.com/spf13/cobra"
+	"github.com/unseenwizzard/ko/pkg/commands/options"
 )
 
 // addBuild augments our CLI surface with build.

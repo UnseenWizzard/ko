@@ -34,9 +34,9 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/google"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
 
-	"github.com/google/ko/pkg/build"
-	"github.com/google/ko/pkg/commands/options"
-	"github.com/google/ko/pkg/publish"
+	"github.com/unseenwizzard/ko/pkg/build"
+	"github.com/unseenwizzard/ko/pkg/commands/options"
+	"github.com/unseenwizzard/ko/pkg/publish"
 )
 
 var (

@@ -1,4 +1,4 @@
-module github.com/google/ko
+module github.com/unseenwizzard/ko
 
 go 1.22.3
 

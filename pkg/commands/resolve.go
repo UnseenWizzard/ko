@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/google/ko/pkg/commands/options"
 	"github.com/spf13/cobra"
+	"github.com/unseenwizzard/ko/pkg/commands/options"
 )
 
 // addResolve augments our CLI surface with resolve.

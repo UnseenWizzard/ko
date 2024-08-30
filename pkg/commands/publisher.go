@@ -19,8 +19,8 @@ import (
 	"fmt"
 
 	"github.com/google/go-containerregistry/pkg/name"
-	"github.com/google/ko/pkg/build"
-	"github.com/google/ko/pkg/publish"
+	"github.com/unseenwizzard/ko/pkg/build"
+	"github.com/unseenwizzard/ko/pkg/publish"
 )
 
 // PublishImages publishes images

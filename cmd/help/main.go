@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/google/ko/pkg/commands"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
+	"github.com/unseenwizzard/ko/pkg/commands"
 )
 
 var dir string

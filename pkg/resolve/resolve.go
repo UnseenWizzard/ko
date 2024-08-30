@@ -21,8 +21,8 @@ import (
 	"sync"
 
 	"github.com/dprotaso/go-yit"
-	"github.com/google/ko/pkg/build"
-	"github.com/google/ko/pkg/publish"
+	"github.com/unseenwizzard/ko/pkg/build"
+	"github.com/unseenwizzard/ko/pkg/publish"
 	"golang.org/x/sync/errgroup"
 	"gopkg.in/yaml.v3"
 )

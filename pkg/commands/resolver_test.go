@@ -37,9 +37,9 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/daemon"
 	"github.com/google/go-containerregistry/pkg/v1/empty"
 	"github.com/google/go-containerregistry/pkg/v1/random"
-	"github.com/google/ko/pkg/build"
-	"github.com/google/ko/pkg/commands/options"
-	kotesting "github.com/google/ko/pkg/internal/testing"
+	"github.com/unseenwizzard/ko/pkg/build"
+	"github.com/unseenwizzard/ko/pkg/commands/options"
+	kotesting "github.com/unseenwizzard/ko/pkg/internal/testing"
 	"gopkg.in/yaml.v3"
 )
 

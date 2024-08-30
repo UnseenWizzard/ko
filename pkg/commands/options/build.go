@@ -22,10 +22,10 @@ import (
 	"reflect"
 
 	"github.com/google/go-containerregistry/pkg/name"
-	"github.com/google/ko/pkg/build"
 	"github.com/mitchellh/mapstructure"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/unseenwizzard/ko/pkg/build"
 	"golang.org/x/tools/go/packages"
 )
 
